@@ -1,4 +1,5 @@
 name: PetOwnerChecker
 author: Flowsqy
 version: "${project.version}"
+api-version: "1.17"
 main: fr.flowqsy.petownerchecker.PetOwnerCheckerPlugin
