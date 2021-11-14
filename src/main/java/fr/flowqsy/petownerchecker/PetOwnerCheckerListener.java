@@ -27,7 +27,7 @@ public class PetOwnerCheckerListener implements Listener {
             final AnimalTamer owner = pet.getOwner();
             if (
                     owner != null
-                    && owner.getUniqueId().equals(event.getPlayer().getUniqueId())
+                    && !owner.getUniqueId().equals(event.getPlayer().getUniqueId())
                     && owner.getName() != null
             ) {
                 event.getPlayer().spigot().sendMessage(
