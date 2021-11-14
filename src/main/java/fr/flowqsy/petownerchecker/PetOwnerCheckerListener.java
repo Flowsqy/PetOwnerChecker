@@ -17,7 +17,7 @@ public class PetOwnerCheckerListener implements Listener {
 
     public PetOwnerCheckerListener(YamlConfiguration configuration) {
         message = ChatColor.translateAlternateColorCodes('&',
-                configuration.getString("message", "&a&nPropriétaire : &b%owner%")
+                configuration.getString("message", "&a&nPropriétaire&r&a : &b%owner%")
         );
     }
 
