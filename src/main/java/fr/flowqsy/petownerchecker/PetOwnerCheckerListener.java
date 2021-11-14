@@ -19,10 +19,10 @@ public class PetOwnerCheckerListener implements Listener {
     }
 
     @EventHandler(priority = EventPriority.MONITOR)
-    private void onClickEntity(PlayerInteractEntityEvent event){
-        if(event.getRightClicked() instanceof Tameable pet){
+    private void onClickEntity(PlayerInteractEntityEvent event) {
+        if (event.getRightClicked() instanceof Tameable pet) {
             final AnimalTamer owner = pet.getOwner();
-            if(owner != null && owner.getName() != null){
+            if (owner != null && owner.getName() != null) {
                 event.getPlayer().spigot().sendMessage(
                         ChatMessageType.ACTION_BAR,
                         new TextComponent(TextComponent.fromLegacyText(
